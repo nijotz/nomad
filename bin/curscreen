@@ -1,4 +1,8 @@
 #!/bin/bash
-
 # will most likely fail miserably when more than one screen is attached
-screen -ls | grep Attached | sed -r 's_\s*[0-9]*\.(.*)\s.*_\1_'
+
+while true;
+do
+    screen -ls | grep Attached | sed -r 's_.*[0-9]+\.([^[:space:]]+).*_\1_'
+    sleep 10
+done
