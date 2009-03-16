@@ -1,0 +1,2 @@
+export HISTSIZE=10000
+unset HISTFILESIZE
