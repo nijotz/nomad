@@ -1,0 +1,3 @@
+#!/bin/bash
+
+for file in $(find ~/.nomad/bash/source.d/ -type f | sort); do source $file; done

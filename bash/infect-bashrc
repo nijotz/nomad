@@ -1,0 +1,12 @@
+#!/bin/bash
+
+unique=uijooQu2
+numuniq=$(grep -c $unique ~/.bashrc)
+if [[ $numuniq -eq 0 ]]; then
+    echo "source ~/.nomad/bash/bashload #$unique" >> ~/.bashrc
+elif [[ $numuniq -eq 1 ]]; then
+    exit;
+elif [[ $numuniq -gt 1 ]]; then
+    echo "More than one infection!"
+    exit 1
+fi
