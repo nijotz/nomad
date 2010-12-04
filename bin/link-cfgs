@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for cfg in ~/.nomad/cfgs/*; do
+    ln -s $cfg ~/.$(basename $cfg);
+done;

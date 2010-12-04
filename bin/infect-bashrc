@@ -3,7 +3,7 @@
 unique=uijooQu2
 numuniq=$(grep -c $unique ~/.bashrc)
 if [[ $numuniq -eq 0 ]]; then
-    echo "source ~/.nomad/bash/bashload #$unique" >> ~/.bashrc
+    echo "source ~/.nomad/bin/bashload #$unique" >> ~/.bashrc
 elif [[ $numuniq -eq 1 ]]; then
     exit;
 elif [[ $numuniq -gt 1 ]]; then
