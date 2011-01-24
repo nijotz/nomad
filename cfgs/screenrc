@@ -13,3 +13,5 @@ backtick 111 3 0 /home/nick/.nomad/bin/curscreen
 backtick 222 0 0 whoami
 hardstatus string "%{gk}[ %{M}%222`%{G}@%{B}%H %{g}][ %{r}%111` %{-}][%= %{wk}%?%-Lw%?%{r}(%{W}%n*%f %t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][ %{y}%c:%s %{B}%D %{g}%m/%d ]"
 # for some reason if I try to make the time white and the last bracket green, it doesn't work.
+
+vbell off
