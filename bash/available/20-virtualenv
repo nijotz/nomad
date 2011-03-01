@@ -1,2 +1,2 @@
-WORKON_HOME=~/docs/virtualenvs
+WORKON_HOME=~/pkgs/virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
