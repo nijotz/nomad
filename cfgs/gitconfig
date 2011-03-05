@@ -1,8 +1,16 @@
 [user]
-	name = Nick Tzaperas
-	email = nick@aquameta.com
+    name = Nick Tzaperas
+    email = nick@aquameta.com
 [color]
-	diff = True
-	status = auto
+    diff = True
+    status = auto
 [push]
-	default = current
+    default = current
+[alias]
+    st = status -sb
+    me = log --author=Nick
+    lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+[push]
+    default = current
+[status]
+    help = false
