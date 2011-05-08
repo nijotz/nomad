@@ -1,0 +1,2 @@
+cd ~/.nomad
+~/.nomad/bin/git-pull
