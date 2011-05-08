@@ -1,2 +1,2 @@
 cd ~/.nomad
-~/.nomad/bin/git-pull
+~/.nomad/bin/gitpull-install

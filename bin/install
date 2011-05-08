@@ -2,4 +2,5 @@
 
 ~/.nomad/bin/infect-bashrc
 ~/.nomad/bin/link-cfgs
+~/.nomad/bin/gitpull-install
 source ~/.bashrc

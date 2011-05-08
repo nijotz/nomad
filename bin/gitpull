@@ -1,0 +1,5 @@
+#!/bin/bash
+
+exec &>>~/.nomad/.gitpull.log
+cd ~/.nomad
+git pull
