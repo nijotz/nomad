@@ -3,7 +3,10 @@
 exec &>/dev/null
 cronfile=~/.nomad/crontab
 crontab -l > $cronfile
-if grep yei2eiWa $cronfile; then exit; fi
+if grep yei2eiWa $cronfile; then 
+    rm $cronfile
+    exit
+fi
 echo "@hourly ~/.nomad/bin/gitpull #yei2eiWa" >> $cronfile
 crontab $cronfile
 rm $cronfile
