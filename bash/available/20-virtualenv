@@ -1,2 +1,7 @@
-WORKON_HOME=~/pkgs/virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+WORKON_HOME=~/.virtualenvs
+if [ ! -d $WORKON_HOME ]; then mkdir -p $WORKON_HOME; fi
+
+# Ubuntu installs this script as /etc/bash_completion/virtualenvwrapper
+# only source the /usr/local/bin version if it exists
+vewsh=/usr/local/bin/virtualenvwrapper.sh
+if [ -f $vewsh ]; then source /usr/local/bin/virtualenvwrapper.sh; fi
