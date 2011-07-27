@@ -1,1 +1,1 @@
-PATH=~/bin/:${PATH}
+PATH=~/bin/:~/.nomad/scripts/:${PATH}
