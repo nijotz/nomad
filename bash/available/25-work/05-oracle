@@ -1,2 +1,0 @@
-export ORACLE_HOME=/usr/vendor/pkg/oracle/product/10.2.0.1/
-export PATH=$ORACLE_HOME/bin:$PATH
