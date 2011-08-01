@@ -15,3 +15,6 @@ set guicursor=n-v-c:block,o:hor50,i-ci:hor15,r-cr:hor30,sm:block
 syntax on
 autocmd BufEnter * setlocal cursorline
 hi cursorline ctermbg=17 cterm=NONE
+
+call pathogen#infect()
+call pathogen#helptags()
