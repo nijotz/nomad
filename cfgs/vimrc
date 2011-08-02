@@ -6,8 +6,8 @@ set history=1000
 set wildmode=list:longest
 set number
 set list
-set ai
-set hls
+set autoindent
+set hlsearch
 set ignorecase
 set smartcase
 set lcs=tab:+.,eol:·
