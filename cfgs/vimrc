@@ -1,5 +1,5 @@
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set nocompatible
 set history=1000
@@ -15,6 +15,7 @@ set guicursor=n-v-c:block,o:hor50,i-ci:hor15,r-cr:hor30,sm:block
 set cursorline
 hi cursorline ctermbg=17 cterm=NONE
 syntax on
+filetype plugin on
 
 call pathogen#infect()
 call pathogen#helptags()
