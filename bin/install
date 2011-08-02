@@ -2,4 +2,5 @@
 
 ~/.nomad/bin/infect-bashrc
 ~/.nomad/bin/link-cfgs
+~/.nomad/bin/sync-submodules
 source ~/.bashrc
