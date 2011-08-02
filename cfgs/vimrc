@@ -19,3 +19,5 @@ filetype plugin on
 
 call pathogen#infect()
 call pathogen#helptags()
+
+map <leader>td <Plug>TaskList

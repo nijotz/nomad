@@ -10,3 +10,6 @@
 [submodule "cfgs/vim/bundle/tasklist"]
 	path = cfgs/vim/bundle/tasklist
 	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule "cfgs/vim/bundle/command-t"]
+	path = cfgs/vim/bundle/command-t
+	url = https://github.com/wincent/Command-T.git
