@@ -4,3 +4,9 @@
 [submodule "cfgs/vim/bundle/fugitive"]
 	path = cfgs/vim/bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "cfgs/vim/bundle/snipmate"]
+	path = cfgs/vim/bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "cfgs/vim/bundle/tasklist"]
+	path = cfgs/vim/bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim.git
