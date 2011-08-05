@@ -17,7 +17,12 @@ hi cursorline ctermbg=17 cterm=NONE
 syntax on
 filetype plugin on
 
+" pathogen
 call pathogen#infect()
 call pathogen#helptags()
 
+" tasklist
 map <leader>td <Plug>TaskList
+
+" pep8
+let g:pep8_map='<leader>8'
