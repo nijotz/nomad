@@ -20,7 +20,6 @@ set shortmess+=a
 set showcmd
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 set incsearch
-set splitbelow  "good for preview windows openging below
 set ls=2
 set completeopt=menuone,longest,preview
 syntax on
