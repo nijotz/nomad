@@ -1,6 +1,4 @@
 #!/bin/bash
 
-~/.nomad/bin/infect-bashrc
-~/.nomad/bin/link-cfgs
-~/.nomad/bin/sync-submodules
+for file in ~/.nomad/bin/install.d/*; do $file; done
 source ~/.bashrc
