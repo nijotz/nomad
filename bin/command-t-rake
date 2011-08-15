@@ -1,3 +1,8 @@
-pushd ~/.nomad/cfgs/vim/bundles/command-t > /dev/null
+pushd ~/.nomad/cfgs/vim/bundle/command-t > /dev/null
 rake make
+if [ $? -ne 0 ]; then
+  echo -----
+  echo ruby and ruby-dev need to be installed
+  echo sudo apt-get install ruby ruby-dev
+fi
 popd > /dev/null
