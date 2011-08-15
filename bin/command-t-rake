@@ -1,0 +1,3 @@
+pushd ~/.nomad/cfgs/vim/bundles/command-t > /dev/null
+rake make
+popd > /dev/null
