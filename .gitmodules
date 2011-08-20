@@ -31,3 +31,6 @@
 [submodule "cfgs/vim/bundle/conque"]
 	path = cfgs/vim/bundle/conque
 	url = https://github.com/vim-scripts/Conque-Shell.git
+[submodule "cfgs/vim/bundle/coffee-script"]
+	path = cfgs/vim/bundle/coffee-script
+	url = https://github.com/vim-scripts/vim-coffee-script.git
