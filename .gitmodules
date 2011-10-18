@@ -34,3 +34,6 @@
 [submodule "cfgs/vim/bundle/solarized"]
 	path = cfgs/vim/bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "cfgs/vim/bundle/coffee-script"]
+	path = cfgs/vim/bundle/coffee-script
+	url = https://github.com/vim-scripts/vim-coffee-script.git
