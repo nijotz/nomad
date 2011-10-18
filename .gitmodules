@@ -31,3 +31,6 @@
 [submodule "cfgs/vim/bundle/conque"]
 	path = cfgs/vim/bundle/conque
 	url = https://github.com/vim-scripts/Conque-Shell.git
+[submodule "cfgs/vim/bundle/solarized"]
+	path = cfgs/vim/bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
