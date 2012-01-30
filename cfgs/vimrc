@@ -61,3 +61,6 @@ cmap W! w !sudo tee % >/dev/null
 
 " fix pyflakes hiding python strings with default colors
 highlight SpellBad ctermbg=0 ctermfg=NONE cterm=underline
+
+" pyflakes breaks other plugins that use the quickfix window
+let g:pyflakes_use_quickfix = 0
