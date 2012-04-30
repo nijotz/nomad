@@ -2,3 +2,12 @@ Installation
 ------------
 git clone git@github.com:nijotz/nomad.git ~/.nomad
 source ~/.nomad/bin/install
+
+Packages (Ubuntu)
+-----------------
+htop
+vim
+tmux
+nmap
+curl
+git
