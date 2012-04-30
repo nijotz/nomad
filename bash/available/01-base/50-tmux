@@ -7,4 +7,5 @@ settitle() {
 ssh() {
   settitle $(echo $* | sed -e 's/-p.[0-9]*//g' -e 's/-A//g' -e 's/[a-zA-Z]*@//g' -e 's/ssh[ ]*//g')
   command ssh "$@"
+  tmux set-window-option automatic-rename on > /dev/null
 }
