@@ -1,0 +1,10 @@
+alias tmux="TERM=xterm-256color tmux"
+
+settitle() {
+  printf "\033k$1\033\\"
+}
+
+ssh() {
+  settitle $(echo $* | sed -e 's/-p.[0-9]*//g' -e 's/-A//g' -e 's/[a-zA-Z]*@//g' -e 's/ssh[ ]*//g')
+  command ssh "$@"
+}
