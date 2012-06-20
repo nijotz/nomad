@@ -11,3 +11,5 @@ tmux
 nmap
 curl
 git
+pv
+trickle
