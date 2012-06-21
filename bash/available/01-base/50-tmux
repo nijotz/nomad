@@ -23,7 +23,15 @@ parse_host() {
 }
 
 ssh() {
+
+  # If a Ctrl-C is ever sent, make sure tmux window naming goes back to the
+  # default.  This fixes the window name not reverting when Ctrl-C'ing during
+  # password input for ssh.
+  trap 'tmux set-window-option automatic-rename on > /dev/null' 2
+
   settitle $(parse_host $*)
   command ssh "$@"
+
+  # revert tmux window name to default
   tmux set-window-option automatic-rename on > /dev/null
 }
