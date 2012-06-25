@@ -12,3 +12,5 @@ nmap
 curl
 git
 openssh-server
+pv
+trickle
