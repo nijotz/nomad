@@ -11,3 +11,4 @@ tmux
 nmap
 curl
 git
+openssh-server
