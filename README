@@ -5,12 +5,12 @@ source ~/.nomad/bin/install
 
 Packages (Ubuntu)
 -----------------
-htop
-vim
-tmux
-nmap
 curl
 git
+htop
+nmap
 openssh-server
 pv
-trickle
+tmux
+vim
+xclip
