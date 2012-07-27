@@ -1,5 +1,5 @@
-unset HISTFILESIZE
-export HISTSIZE=10000
+export HISTSIZE=
+export HISTFILESIZE=
 export HISTTIMEFORMAT='%F %T '
 export PROMPT_COMMAND="history -a"
-alias history-reload="history -c; history -r"
+shopt -s histappend
