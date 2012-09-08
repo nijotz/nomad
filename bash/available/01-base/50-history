@@ -1,5 +1,0 @@
-unset HISTFILESIZE
-export HISTSIZE=10000
-export HISTTIMEFORMAT='%F %T '
-export PROMPT_COMMAND="history -a"
-alias history-reload="history -c; history -r"

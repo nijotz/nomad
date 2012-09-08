@@ -1,0 +1,5 @@
+export HISTSIZE=
+export HISTFILESIZE=
+export HISTTIMEFORMAT='%F %T '
+export PROMPT_COMMAND="history -a"
+shopt -s histappend
