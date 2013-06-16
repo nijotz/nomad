@@ -1,0 +1,3 @@
+# installed coreutils through brew so I could get the -h flag in 'sort'
+# but all the program names begin with g, unless I do this:
+PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
