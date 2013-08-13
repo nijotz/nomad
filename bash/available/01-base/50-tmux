@@ -10,11 +10,12 @@ parse_host() {
 
   sed_statements[0]='s/-p *[0-9]*//g'    # ignore port flag
   sed_statements[1]='s/-A//g'            # ignore agent forwarding flag
-  sed_statements[2]='s/[^ @]*@//g'       # ignore usernames
+  #sed_statements[2]='s/[^ @]*@//g'       # ignore usernames
+  sed_statements[2]="s/${USER}@//g"      # ignore username if same
   sed_statements[3]='s/ssh[ ]*//g'       # ignore the actual ssh command
 
   # ignore domains if FQDN is used. keep IP addresses intact
-  sed_statements[4]='s/\([[:alpha:]][^ .]*\)\..*/\1/g'
+  sed_statements[4]='s/\([[:alpha:]][[:alpha:]]\)\..*/\1/g'
 
   sed_arguments=""
   for i in $(seq 0 $((${#sed_statements[@]} - 1))); do
