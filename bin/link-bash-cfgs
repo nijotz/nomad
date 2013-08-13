@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ln -sf ../available/01-base ~/.nomad/bash/enabled/
+
+if [ $(uname) == "Linux" ]; then ln -sf ../available/10-linux ~/.nomad/bash/enabled/; fi
+if [ $(uname) == "Darwin" ]; then ln -sf ../available/10-osx ~/.nomad/bash/enabled/; fi
