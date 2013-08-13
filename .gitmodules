@@ -37,3 +37,6 @@
 [submodule "cfgs/vim/bundle/coffee-script"]
 	path = cfgs/vim/bundle/coffee-script
 	url = https://github.com/vim-scripts/vim-coffee-script.git
+[submodule "scripts"]
+	path = scripts
+	url = git@github.com:nijotz/scripts.git
