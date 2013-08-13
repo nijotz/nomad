@@ -1,5 +1,5 @@
 au BufRead,BufNewFile *.pp setfiletype puppet
-set tabstop=2
-set expandtab
-set softtabstop=2
-set shiftwidth=2
+setlocal tabstop=4
+setlocal softtabstop=4
+setlocal shiftwidth=4
+setlocal expandtab
