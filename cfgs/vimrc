@@ -17,13 +17,18 @@ set linebreak
 set confirm
 set shortmess+=a
 set showcmd
-set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
-set incsearch
-set ls=2
-set completeopt=menuone,longest,preview
+
+set incsearch  " as I type my search, start moving through the file
+set laststatus=2  " always show status bar, even if it's the last window
+set completeopt=menuone,longest,preview  " bash style insert mode tab completion
 set t_Co=256  " 256 colors
-syntax on
-filetype plugin on
+
+" linenum, columnnum, percentage through file, modification flag, file path,
+" read only/help/preview flags, file format, fugitive status
+set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
+
+syntax on  " syntax highlighting
+filetype plugin on  " change settings and syntax highlighting based on filetype
 
 " pathogen
 call pathogen#infect()
