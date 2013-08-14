@@ -37,3 +37,6 @@
 [submodule "cfgs/vim/bundle/eighty-columns"]
 	path = cfgs/vim/bundle/eighty-columns
 	url = git@github.com:nijotz/eighty-columns.vim.git
+[submodule "cfgs/vim/bundle/nerdtree"]
+	path = cfgs/vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
