@@ -21,6 +21,7 @@ set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 set incsearch
 set ls=2
 set completeopt=menuone,longest,preview
+set t_Co=256  " 256 colors
 syntax on
 filetype plugin on
 
@@ -43,8 +44,8 @@ nnoremap <leader><space> :nohlsearch<cr>
 " cursor positioning
 set cursorline
 set cursorcolumn
-highlight CursorColumn ctermbg=0 cterm=NONE
-highlight CursorLine ctermbg=0 cterm=NONE
+highlight CursorColumn ctermbg=234 cterm=NONE
+highlight CursorLine ctermbg=234 cterm=NONE
 
 " close preview window automatically when we move around
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
