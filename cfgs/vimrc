@@ -40,12 +40,6 @@ let g:pep8_map = '<leader>8'
 " hide matches on <leader>space
 nnoremap <leader><space> :nohlsearch<cr>
 
-" show a line at column 79
- if exists("&colorcolumn")
-    set colorcolumn=79
-endif
-highlight ColorColumn ctermbg=7
-
 " cursor positioning
 set cursorline
 set cursorcolumn

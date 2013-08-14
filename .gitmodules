@@ -34,3 +34,6 @@
 [submodule "cfgs/vim/bundle/syntastic"]
 	path = cfgs/vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "cfgs/vim/bundle/eighty-columns"]
+	path = cfgs/vim/bundle/eighty-columns
+	url = git@github.com:nijotz/eighty-columns.vim.git
