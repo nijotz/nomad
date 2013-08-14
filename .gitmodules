@@ -19,9 +19,6 @@
 [submodule "cfgs/vim/bundle/pydoc"]
 	path = cfgs/vim/bundle/pydoc
 	url = https://github.com/fs111/pydoc.vim.git
-[submodule "cfgs/vim/bundle/minibufexpl"]
-	path = cfgs/vim/bundle/minibufexpl
-	url = https://github.com/fholgado/minibufexpl.vim.git
 [submodule "cfgs/vim/bundle/conque"]
 	path = cfgs/vim/bundle/conque
 	url = https://github.com/vim-scripts/Conque-Shell.git
