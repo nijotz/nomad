@@ -16,9 +16,6 @@
 [submodule "cfgs/vim/bundle/pep8"]
 	path = cfgs/vim/bundle/pep8
 	url = https://github.com/vim-scripts/pep8.git
-[submodule "cfgs/vim/bundle/pyflakes"]
-	path = cfgs/vim/bundle/pyflakes
-	url = https://github.com/mitechie/pyflakes-pathogen.git
 [submodule "cfgs/vim/bundle/gundo"]
 	path = cfgs/vim/bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
@@ -40,3 +37,6 @@
 [submodule "scripts"]
 	path = scripts
 	url = git@github.com:nijotz/scripts.git
+[submodule "cfgs/vim/bundle/syntastic"]
+	path = cfgs/vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
