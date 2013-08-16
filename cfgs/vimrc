@@ -64,7 +64,3 @@ cmap W! w !sudo tee % >/dev/null
 
 " tell syntastic to use pylint
 let g:syntastic_python_checkers=['pyflakes']
-
-" solarized
-colorscheme solarized
-set background=dark
