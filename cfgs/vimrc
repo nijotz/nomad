@@ -49,6 +49,9 @@ nnoremap <leader>n :NERDTreeToggle<cr>
 " hide matches on <leader>space
 nnoremap <leader><space> :nohlsearch<cr>
 
+" shortcut for Conque bash shell
+nnoremap <leader>sh :ConqueTerm bash<cr>
+
 " cursor positioning
 set cursorline
 set cursorcolumn
