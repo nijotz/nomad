@@ -5,7 +5,6 @@ set nocompatible
 set history=1000
 set wildmode=list:longest
 set number
-set list
 set autoindent
 set hlsearch
 set ignorecase
