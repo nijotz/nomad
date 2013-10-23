@@ -43,3 +43,6 @@
 [submodule "cfgs/vim/bundle/airline"]
 	path = cfgs/vim/bundle/airline
 	url = https://github.com/bling/vim-airline
+[submodule "cfgs/vim/bundle/vcscommand"]
+	path = cfgs/vim/bundle/vcscommand
+	url = https://github.com/vim-scripts/vcscommand.vim
