@@ -46,3 +46,6 @@
 [submodule "cfgs/vim/bundle/vcscommand"]
 	path = cfgs/vim/bundle/vcscommand
 	url = https://github.com/vim-scripts/vcscommand.vim
+[submodule "cfgs/vim/bundle/bufexplorer"]
+	path = cfgs/vim/bundle/bufexplorer
+	url = https://github.com/corntrace/bufexplorer
