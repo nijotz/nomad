@@ -66,3 +66,9 @@ cmap W! w !sudo tee % >/dev/null
 
 " tell syntastic to use pylint
 let g:syntastic_python_checkers=['pyflakes']
+
+" Set tidy as the indent program when editting xml files
+au FileType xml setlocal equalprg=tidy\ -i\ -xml\ --indent-spaces\ 4\ 2>/dev/null
+
+" Set tidy as the indent program when editting html files
+au FileType html setlocal equalprg=tidy\ -i\ -html\ --indent-spaces\ 4\ 2>/dev/null
