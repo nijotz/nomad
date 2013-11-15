@@ -1,0 +1,2 @@
+# prepend_to_path defined in 50-path
+prepend_to_path ~/.cabal/bin
