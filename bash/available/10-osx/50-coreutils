@@ -1,6 +1,6 @@
 # installed coreutils through brew so I could get the -h flag in 'sort'
 # but all the program names begin with g, unless I do this:
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:${PATH}"
+prepend_to_path $(brew --prefix coreutils)/libexec/gnubin
 
 # Need the man pages for the GNU coreutils
 export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:${MANPATH}"

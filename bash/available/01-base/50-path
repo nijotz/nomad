@@ -20,6 +20,7 @@ check_path ()
     then
         return 0
     fi
+    return 1
 }
 prepend_to_path ~/bin
 prepend_to_path ~/.nomad/scripts
