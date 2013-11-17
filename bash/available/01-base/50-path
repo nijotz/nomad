@@ -1,26 +1,23 @@
 append_to_path ()
 {
-    check_path $1
-    if [ $? -ne 0 ]; then
-        export PATH=$PATH:${1}
-    fi
+    remove_path $1
+    export PATH=$PATH:${1}
 }
 
 prepend_to_path ()
 {
-    check_path $1
-    if [ $? -ne 0 ]; then
-        export PATH=${1}:$PATH
-    fi
+    remove_path $1
+    export PATH=${1}:$PATH
 }
 
-check_path ()
+# Remove path if it is already added
+# TODO: if the path exists as a portion of a larger path, this breaks
+remove_path ()
 {
     if [[ "$PATH" =~ (^|:)"${1}"(:|$) ]]
     then
-        return 0
+        export PATH=$(echo $PATH | sed -e "s^${1}^^g" -e 's/::/:/g')
     fi
-    return 1
 }
 prepend_to_path ~/bin
 prepend_to_path ~/.nomad/scripts
