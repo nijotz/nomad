@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ ! -d ~/.nomad/bash/enabled ]; then
+    mkdir ~/.nomad/bash/enabled
+fi
+
 ln -sf ../available/01-base ~/.nomad/bash/enabled/
 
 if [ $(uname) == "Linux" ]; then ln -sf ../available/10-linux ~/.nomad/bash/enabled/; fi
