@@ -60,7 +60,7 @@ highlight CursorLine ctermbg=234 cterm=NONE
 " sudo write this
 cmap W! w !sudo tee % >/dev/null
 
-" tell syntastic to use pylint
+" tell syntastic which utilities to use
 let g:syntastic_python_checkers=['pyflakes']
 
 " Set tidy as the indent program when editting xml files
