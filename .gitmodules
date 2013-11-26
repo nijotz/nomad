@@ -49,3 +49,9 @@
 [submodule "cfgs/vim/bundle/bufexplorer"]
 	path = cfgs/vim/bundle/bufexplorer
 	url = https://github.com/corntrace/bufexplorer
+[submodule "cfgs/vim/ultisnips"]
+	path = cfgs/vim/bundle/ultisnips
+	url = git@github.com:vim-scripts/UltiSnips.git
+[submodule "cfgs/vim/bundle/ultisnips"]
+	path = cfgs/vim/bundle/ultisnips
+	url = git@github.com:vim-scripts/UltiSnips.git
