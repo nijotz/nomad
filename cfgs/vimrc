@@ -41,9 +41,6 @@ map <leader>td <Plug>TaskList
 " gundo
 map <leader>u :GundoToggle<CR>
 
-" pep8
-let g:pep8_map = '<leader>8'
-
 " toggle nerdtree
 nnoremap <leader>n :NERDTreeToggle<cr>
 
