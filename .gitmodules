@@ -55,3 +55,6 @@
 [submodule "cfgs/vim/bundle/ultisnips"]
 	path = cfgs/vim/bundle/ultisnips
 	url = git@github.com:vim-scripts/UltiSnips.git
+[submodule "cfgs/vim/bundle/ctrlp"]
+	path = cfgs/vim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
