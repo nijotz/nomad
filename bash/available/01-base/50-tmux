@@ -14,8 +14,8 @@ parse_host() {
   sed_statements[2]="s/${USER}@//g"      # ignore username if same
   sed_statements[3]='s/ssh[ ]*//g'       # ignore the actual ssh command
 
-  # ignore domains if FQDN is used. keep IP addresses intact
-  sed_statements[4]='s/\([[:alpha:]][[:alpha:]]\)\..*/\1/g'
+  # ignore the last domain if there is more than one, it's usually unimportant
+  sed_statements[4]='s/\(@[a-zA-Z\-\.]*\)\.[a-zA-Z\-]*/\1/g'
 
   sed_arguments=""
   for i in $(seq 0 $((${#sed_statements[@]} - 1))); do
