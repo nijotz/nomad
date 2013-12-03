@@ -3,12 +3,8 @@ set softtabstop=4
 set expandtab
 set nocompatible
 set history=1000
-set wildmode=list:longest
-set number
+
 set autoindent
-set hlsearch
-set ignorecase
-set smartcase
 set lcs=tab:+.,eol:·
 set guicursor=n-v-c:block,o:hor50,i-ci:hor15,r-cr:hor30,sm:block
 set scrolloff=3
@@ -17,10 +13,16 @@ set confirm
 set shortmess+=a
 set showcmd
 
+set completeopt=menuone,longest,preview  " bash-like tab completion on insert
+set hlsearch  " highlight search results
 set incsearch  " as I type my search, start moving through the file
 set laststatus=2  " always show status bar, even if it's the last window
-set completeopt=menuone,longest,preview  " bash style insert mode tab completion
+set number  " line numbers on the left
+set smartcase " case insensitive search unless search has uppser case chars
 set t_Co=256  " 256 colors
+
+" list all matches and complete til longest common string (command line)
+set wildmode=list:longest
 
 " linenum, columnnum, percentage through file, modification flag, file path,
 " read only/help/preview flags, file format, fugitive status
