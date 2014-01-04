@@ -14,3 +14,14 @@ pv
 tmux
 vim
 xclip
+
+Packages (Homebrew)
+___________________
+coreutils
+git
+nmap
+pv
+python
+tmux
+vim
+wget
