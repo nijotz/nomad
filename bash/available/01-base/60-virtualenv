@@ -1,5 +1,7 @@
+# Needs to be after PATHing has been setup for the correct python
+# This includes 40-homebrew and 20-path
+
 WORKON_HOME=~/.virtualenvs
-if [ ! -d $WORKON_HOME ]; then mkdir -p $WORKON_HOME; fi
 
 # Ubuntu installs this script as /etc/bash_completion/virtualenvwrapper
 # only source the /usr/local/bin version if it exists
