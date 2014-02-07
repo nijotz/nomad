@@ -1,2 +1,6 @@
 prepend_to_path /usr/local/bin
 prepend_to_path /usr/local/sbin
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi

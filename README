@@ -17,6 +17,7 @@ xclip
 
 Packages (Homebrew)
 ___________________
+bash-completion
 coreutils
 git
 nmap
