@@ -18,6 +18,7 @@ set hlsearch  " highlight search results
 set incsearch  " as I type my search, start moving through the file
 set laststatus=2  " always show status bar, even if it's the last window
 set number  " line numbers on the left
+set ignorecase " Needed for smartcase to work
 set smartcase " case insensitive search unless search has uppser case chars
 set t_Co=256  " 256 colors
 
