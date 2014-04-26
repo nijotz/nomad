@@ -36,6 +36,10 @@ filetype plugin on  " change settings and syntax highlighting based on filetype
 call pathogen#infect()
 call pathogen#helptags()
 
+" paste/nopaste
+map <leader>p :set paste<CR>
+map <leader>P :set nopaste<CR>
+
 " tasklist
 map <leader>td <Plug>TaskList
 
