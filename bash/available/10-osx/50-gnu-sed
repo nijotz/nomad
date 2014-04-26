@@ -1,0 +1,5 @@
+# I don't want to have to type gsed
+prepend_to_path $(brew --prefix gnu-sed)/libexec/gnubin
+
+# Need the man pages for the GNU sed
+export MANPATH="$(brew --prefix gnu-sed)/libexec/gnuman:${MANPATH}"
