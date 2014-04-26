@@ -1,5 +1,4 @@
-# installed coreutils through brew so I could get the -h flag in 'sort'
-# but all the program names begin with g, unless I do this:
+# I'm used to the GNU version of utils
 prepend_to_path $(brew --prefix coreutils)/libexec/gnubin
 
 # Need the man pages for the GNU coreutils
