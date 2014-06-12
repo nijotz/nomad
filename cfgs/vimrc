@@ -56,6 +56,9 @@ nnoremap <leader><space> :nohlsearch<cr>
 " shortcut for Conque bash shell
 nnoremap <leader>sh :ConqueTerm bash<cr>
 
+" color lines past 80
+windo let &colorcolumn = join(range(81,999),",")
+
 " cursor positioning
 set cursorline
 set cursorcolumn
