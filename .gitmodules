@@ -58,3 +58,6 @@
 [submodule "cfgs/vim/bundle/bats"]
 	path = cfgs/vim/bundle/bats
 	url = https://github.com/vim-scripts/bats.vim.git
+[submodule "cfgs/vim/bundle/matchtag"]
+	path = cfgs/vim/bundle/matchtag
+	url = git@github.com:gregsexton/MatchTag.git
