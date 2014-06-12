@@ -50,9 +50,6 @@ map <leader>td <Plug>TaskList
 " gundo
 map <leader>u :GundoToggle<CR>
 
-" toggle nerdtree
-nnoremap <leader>n :NERDTreeToggle<cr>
-
 " hide matches on <leader>space
 nnoremap <leader><space> :nohlsearch<cr>
 
