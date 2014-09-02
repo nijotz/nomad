@@ -83,3 +83,5 @@ au FileType xml setlocal equalprg=tidy\ -i\ -xml\ --indent-spaces\ 4\ 2>/dev/nul
 
 " Set tidy as the indent program when editting html files
 au FileType html setlocal equalprg=tidy\ -i\ -html\ --indent-spaces\ 4\ 2>/dev/null
+
+colorscheme solarized
