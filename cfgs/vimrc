@@ -19,7 +19,12 @@ set completeopt=menuone,longest,preview  " bash-like tab completion on insert
 set hlsearch  " highlight search results
 set incsearch  " as I type my search, start moving through the file
 set laststatus=2  " always show status bar, even if it's the last window
-set number  " line numbers on the left
+
+" In Vim 7.4+ the combination of these two variables will show the absolute
+" line number on the current line and relative line number on every other line
+set relativenumber
+set number
+
 set ignorecase " Needed for smartcase to work
 set smartcase " case insensitive search unless search has uppser case chars
 set t_Co=256  " 256 colors
