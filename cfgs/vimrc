@@ -13,6 +13,8 @@ set confirm
 set shortmess+=a
 set showcmd
 
+set backspace=indent,eol,start
+
 set completeopt=menuone,longest,preview  " bash-like tab completion on insert
 set hlsearch  " highlight search results
 set incsearch  " as I type my search, start moving through the file
