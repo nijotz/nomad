@@ -72,7 +72,7 @@ set cursorcolumn
 highlight CursorColumn ctermbg=234 cterm=NONE
 highlight CursorLine ctermbg=234 cterm=NONE
 
-" sudo write this
+" sudo write this file
 cmap W! w !sudo tee % >/dev/null
 
 " tell syntastic which utilities to use
