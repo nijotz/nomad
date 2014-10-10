@@ -51,8 +51,8 @@ map <leader>P :set nopaste<CR>
 map <leader>n :set nu!<CR>
 map <leader>N :set rnu!<CR>
 
-" tasklist
-map <leader>td <Plug>TaskList
+" toggle nerdtree
+nnoremap <leader>t :NERDTreeToggle<cr>
 
 " gundo
 map <leader>u :GundoToggle<CR>

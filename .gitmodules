@@ -61,3 +61,6 @@
 [submodule "cfgs/vim/bundle/matchtag"]
 	path = cfgs/vim/bundle/matchtag
 	url = git@github.com:gregsexton/MatchTag.git
+[submodule "cfgs/vim/bundle/nerdtree"]
+	path = cfgs/vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
