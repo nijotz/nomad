@@ -64,3 +64,6 @@
 [submodule "cfgs/vim/bundle/ctrlp_bdelete.vim"]
 	path = cfgs/vim/bundle/ctrlp_bdelete.vim
 	url = git@github.com:d11wtq/ctrlp_bdelete.vim.git
+[submodule "cfgs/vim/bundle/mustache"]
+	path = cfgs/vim/bundle/mustache
+	url = git://github.com/mustache/vim-mustache-handlebars.git
