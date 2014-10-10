@@ -85,3 +85,7 @@ au FileType xml setlocal equalprg=tidy\ -i\ -xml\ --indent-spaces\ 4\ 2>/dev/nul
 au FileType html setlocal equalprg=tidy\ -i\ -html\ --indent-spaces\ 4\ 2>/dev/null
 
 colorscheme solarized
+
+let g:ctrlp_map = '<leader>f'
+let g:ctrlp_working_path_mode = 0  " Don't mess with the search path
+call ctrlp_bdelete#init()  " Plugin to delete buffers in CtrlPBuf mode

@@ -64,3 +64,6 @@
 [submodule "cfgs/vim/bundle/nerdtree"]
 	path = cfgs/vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "cfgs/vim/bundle/ctrlp_bdelete.vim"]
+	path = cfgs/vim/bundle/ctrlp_bdelete.vim
+	url = git@github.com:d11wtq/ctrlp_bdelete.vim.git
