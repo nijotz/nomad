@@ -48,8 +48,8 @@ map <leader>p :set paste<CR>
 map <leader>P :set nopaste<CR>
 
 " relative/normal line numbers
-map <leader>n :set nu<CR>
-map <leader>N :set rnu<CR>
+map <leader>n :set nu!<CR>
+map <leader>N :set rnu!<CR>
 
 " tasklist
 map <leader>td <Plug>TaskList
