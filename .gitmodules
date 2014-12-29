@@ -67,3 +67,9 @@
 [submodule "cfgs/vim/bundle/mustache"]
 	path = cfgs/vim/bundle/mustache
 	url = git://github.com/mustache/vim-mustache-handlebars.git
+[submodule "cfgs/vim/bundle/linediff.vim"]
+	path = cfgs/vim/bundle/linediff
+	url = https://github.com/AndrewRadev/linediff.vim
+[submodule "cfgs/vim/bundle/linediff"]
+	path = cfgs/vim/bundle/linediff
+	url = https://github.com/AndrewRadev/linediff.vim
