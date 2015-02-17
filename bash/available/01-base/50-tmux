@@ -33,7 +33,7 @@ remote_shell_wrapper() {
   trap 'tmux set-window-option automatic-rename on > /dev/null' 2
 
   settitle $(parse_host $*)
-  command $1 "${*:2}"
+  command $1 ${*:2}
 
   # revert tmux window name to default
   tmux set-window-option automatic-rename on > /dev/null
