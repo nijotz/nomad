@@ -15,14 +15,14 @@ parse_host() {
   sed_statements[3]="s/$1[ ]*//g"        # ignore the actual command
 
   # ignore the last domain if there is more than one, it's usually unimportant
-  sed_statements[4]='s/\([a-zA-Z\-\.]*\)\.[a-zA-Z\-]*/\1/g'
+  sed_statements[4]='s/([a-zA-Z\-\.]+)\.[a-zA-Z\-]+/\1/g'
 
   sed_arguments=""
   for i in $(seq 0 $((${#sed_statements[@]} - 1))); do
     sed_arguments="${sed_arguments} -e '${sed_statements[$i]}'"
   done
 
-  echo "${*:2}" | eval sed $sed_arguments
+  echo "${*:2}" | eval sed -r $sed_arguments
 }
 
 remote_shell_wrapper() {
