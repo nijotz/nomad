@@ -20,6 +20,8 @@ ___________________
 bash-completion
 coreutils
 git
+gnu-sed
+mplayer
 nmap
 pv
 python
