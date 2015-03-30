@@ -1,3 +1,4 @@
+echo_and_eval << "EOF"
 # The default history settings are set to 500 lines for the file size.  If these
 # configs don't ever load for some reason, the default will remove all history
 # except the last 500 lines.  I don't want that so I'm moving the history file
@@ -17,7 +18,8 @@ export HISTTIMEFORMAT='%F %T '
 # having history from other bash sessions pop up in my current session
 # unexpectedely.  I'd rather do a 'history -n' manually when I need history from
 # other sessions.
-export PROMPT_COMMAND="history -a"
+export PROMPT_COMMAND="${PROMPT_COMMAND}; history -a"
 
 # Append to history file rather than overwrite
 shopt -s histappend
+EOF

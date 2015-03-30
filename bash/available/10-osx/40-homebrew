@@ -1,6 +1,5 @@
-prepend_to_path /usr/local/bin
-prepend_to_path /usr/local/sbin
+echo PATH='/usr/local/bin:/usr/local/sbin:$PATH' | echo_and_eval
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+  echo source $(brew --prefix)/etc/bash_completion
 fi

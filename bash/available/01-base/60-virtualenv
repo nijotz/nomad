@@ -1,13 +1,10 @@
-# Needs to be after PATHing has been setup for the correct python
-# This includes 40-homebrew and 20-path
-
-WORKON_HOME=~/.virtualenvs
+echo WORKON_HOME=~/.virtualenvs
 
 # Ubuntu installs this script as /etc/bash_completion/virtualenvwrapper
 # only source the /usr/local/bin version if it exists
 vewsh=/usr/local/bin/virtualenvwrapper.sh
-if [ -f $vewsh ]; then source $vewsh; fi
+if [ -f $vewsh ]; then echo source $vewsh; fi
 
 # I've seen pip install it here too
 vewsh=/usr/local/share/python/virtualenvwrapper.sh
-if [ -f $vewsh ]; then source $vewsh; fi
+if [ -f $vewsh ]; then echo source $vewsh; fi

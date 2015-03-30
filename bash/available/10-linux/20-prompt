@@ -1,3 +1,4 @@
+cat << "EOF"
 print_pre_prompt() {
 
   hextime=$(printf '0x%02X:%02X:%02X' $(date +" %H %M %S" | sed 's/ 0/ /g'))

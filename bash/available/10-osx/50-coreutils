@@ -1,5 +1,7 @@
+echo_and_eval << EOF
 # I'm used to the GNU version of utils
-prepend_to_path $(brew --prefix coreutils)/libexec/gnubin
+PATH=$(brew --prefix coreutils)/libexec/gnubin:\$PATH
 
 # Need the man pages for the GNU coreutils
-export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:${MANPATH}"
+export MANPATH=$(brew --prefix coreutils)/libexec/gnuman:\${MANPATH}
+EOF

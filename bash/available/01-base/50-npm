@@ -1,2 +1,3 @@
-prepend_to_path /usr/local/share/npm/bin
-prepend_to_path node_modules/.bin
+echo_and_eval << "EOF"
+PATH=/usr/local/share/npm/bin:node_modules/.bin:$PATH
+EOF

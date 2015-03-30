@@ -1,2 +1,4 @@
+cat << EOF
 set -o vi
 export EDITOR=vim
+EOF

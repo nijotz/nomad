@@ -1,12 +1,39 @@
 #!/bin/bash
 
+NOMAD_BASE=~/.nomad/bash/enabled/
+NEW_BASHRC=~/.nomad_bashrc
+
+echo_and_eval() {
+    input=`cat`
+    echo "$input"
+    eval "$input"
+}
+
 unique=uijooQu2
-numuniq=$(grep -c $unique ~/.bashrc)
-if [[ $numuniq -eq 0 ]]; then
-    echo "source ~/.nomad/bin/bashload #$unique" >> ~/.bashrc
-elif [[ $numuniq -eq 1 ]]; then
-    exit;
-elif [[ $numuniq -gt 1 ]]; then
-    echo "More than one infection!"
-    exit 1
-fi
+sed -n "/$unique/q;p" ~/.bashrc > ~/.nomad_bashrc
+echo "# DONOTEDIT -- Dynamically generated with nomad $unique" >> ~/.nomad_bashrc
+echo >> ~/.nomad_bashrc
+
+# find - get bash source files
+# awk - put the filename at the front of the line
+# sort - duh
+# cut - get rid of the filename at the front of the line
+files=$(find -L $NOMAD_BASE -type f ! -iname ".*" | \
+    awk -v FS=/ -v OFS=/ '{print $NF,$0}' | \
+    sort | \
+    cut -f2- -d/)
+
+# source the bash files by the order in which they are named
+for file in $files; do
+    output=$(source $file)
+    if [ "$(echo $output | wc -c)" -gt 1 ]; then
+        echo '####' >> ~/.nomad_bashrc
+        echo \## $(echo $file) >> ~/.nomad_bashrc
+        echo '####' >> ~/.nomad_bashrc
+        echo "$output" >> ~/.nomad_bashrc
+        echo >> ~/.nomad_bashrc
+    fi
+done
+
+mv ~/.bashrc ~/.bashrc.old
+mv ~/.nomad_bashrc ~/.bashrc

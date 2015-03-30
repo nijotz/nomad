@@ -1,2 +1,3 @@
-# prepend_to_path defined in 50-path
-prepend_to_path ~/.cabal/bin
+echo_and_eval << "EOF"
+PATH=~/.cabal/bin:$PATH
+EOF

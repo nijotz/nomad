@@ -1,5 +1,7 @@
+echo_and_eval << EOF
 # I don't want to have to type gsed
-prepend_to_path $(brew --prefix gnu-sed)/libexec/gnubin
+PATH=$(brew --prefix gnu-sed)/libexec/gnubin:\$PATH
 
 # Need the man pages for the GNU sed
-export MANPATH="$(brew --prefix gnu-sed)/libexec/gnuman:${MANPATH}"
+export MANPATH=$(brew --prefix gnu-sed)/libexec/gnuman:\${MANPATH}
+EOF
