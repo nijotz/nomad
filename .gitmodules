@@ -70,6 +70,3 @@
 [submodule "cfgs/vim/bundle/linediff.vim"]
 	path = cfgs/vim/bundle/linediff
 	url = https://github.com/AndrewRadev/linediff.vim
-[submodule "cfgs/vim/bundle/linediff"]
-	path = cfgs/vim/bundle/linediff
-	url = https://github.com/AndrewRadev/linediff.vim
