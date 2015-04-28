@@ -25,6 +25,7 @@ mplayer
 nmap
 pv
 python
+reattach-to-user-namespace --with-wrap-pbcopy-and-pbpaste
 tinc
 tmux
 vim
