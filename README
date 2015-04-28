@@ -25,6 +25,7 @@ mplayer
 nmap
 pv
 python
+tinc
 tmux
 vim
 wget
