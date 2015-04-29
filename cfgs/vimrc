@@ -1,10 +1,6 @@
-set shiftwidth=4
-set softtabstop=4
-set expandtab
 set nocompatible
 set history=1000
 
-set autoindent
 set lcs=tab:+.,eol:·
 set guicursor=n-v-c:block,o:hor50,i-ci:hor15,r-cr:hor30,sm:block
 set scrolloff=3
@@ -19,6 +15,16 @@ set completeopt=menuone,longest,preview  " bash-like tab completion on insert
 set hlsearch  " highlight search results
 set incsearch  " as I type my search, start moving through the file
 set laststatus=2  " always show status bar, even if it's the last window
+
+syntax on  " syntax highlighting
+filetype plugin on  " change settings and syntax highlighting based on filetype
+
+" Tabbing. Any settings other than these are evil.
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set expandtab
+filetype indent on  " filetype specific indenting
 
 " In Vim 7.4+ the combination of these two variables will show the absolute
 " line number on the current line and relative line number on every other line
@@ -35,9 +41,6 @@ set wildmode=list:longest
 " linenum, columnnum, percentage through file, modification flag, file path,
 " read only/help/preview flags, file format, fugitive status
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
-
-syntax on  " syntax highlighting
-filetype plugin on  " change settings and syntax highlighting based on filetype
 
 " pathogen
 call pathogen#infect()
