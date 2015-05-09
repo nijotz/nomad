@@ -7,3 +7,4 @@ print_pre_prompt() {
 }
 
 PROMPT_COMMAND="${PROMPT_COMMAND}; print_pre_prompt"
+EOF
