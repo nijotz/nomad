@@ -16,15 +16,15 @@ set hlsearch  " highlight search results
 set incsearch  " as I type my search, start moving through the file
 set laststatus=2  " always show status bar, even if it's the last window
 
-syntax on  " syntax highlighting
-filetype plugin on  " change settings and syntax highlighting based on filetype
-
 " Tabbing. Any settings other than these are evil.
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set expandtab
 filetype indent on  " filetype specific indenting
+
+syntax on  " syntax highlighting
+filetype plugin on  " change settings and syntax highlighting based on filetype
 
 " In Vim 7.4+ the combination of these two variables will show the absolute
 " line number on the current line and relative line number on every other line
