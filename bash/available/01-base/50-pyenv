@@ -1,3 +1,4 @@
 if which pyenv > /dev/null; then
     echo 'eval "$(pyenv init -)"';
+    echo 'eval "$(pyenv virtualenv-init -)"'
 fi
