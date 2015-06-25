@@ -23,6 +23,30 @@ set tabstop=4
 set expandtab
 filetype indent on  " filetype specific indenting
 
+" Cycle tabbing options
+map <leader><tab> :call CycleTabs()<CR>
+fun! CycleTabs()
+    if !&expandtab
+        echo "4 space tabs"
+        set shiftwidth=4
+        set softtabstop=4
+        set tabstop=4
+        set expandtab
+    elseif &expandtab && &shiftwidth == 4
+        echo "2 space tabs"
+        set shiftwidth=2
+        set softtabstop=2
+        set tabstop=2
+        set expandtab
+    else
+        echo "Tab characters"
+        set shiftwidth=4
+        set softtabstop=4
+        set tabstop=4
+        set noexpandtab
+    endif
+endfun
+
 syntax on  " syntax highlighting
 filetype plugin on  " change settings and syntax highlighting based on filetype
 
