@@ -74,9 +74,9 @@ call pathogen#helptags()
 map <leader>p :set paste<CR>
 map <leader>P :set nopaste<CR>
 
-" relative/normal line numbers
-map <leader>n :set nu!<CR>
-map <leader>N :set rnu!<CR>
+" toggle relative/normal line numbers
+map <leader>n :set rnu<CR>:set nu<CR>
+map <leader>N :set nornu<CR>:set nu<CR>
 
 " toggle nerdtree
 nnoremap <leader>t :NERDTreeToggle<cr>
