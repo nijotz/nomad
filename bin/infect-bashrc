@@ -11,7 +11,7 @@ echo_and_eval() {
 
 unique=uijooQu2
 sed -n "/$unique/q;p" ~/.bashrc > ~/.nomad_bashrc
-echo "# DONOTEDIT -- Dynamically generated with nomad $unique" >> ~/.nomad_bashrc
+echo "# DO NOT EDIT BELOW -- Dynamically generated with nomad $unique" >> ~/.nomad_bashrc
 echo >> ~/.nomad_bashrc
 
 # find - get bash source files
