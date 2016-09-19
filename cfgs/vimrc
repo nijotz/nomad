@@ -94,8 +94,8 @@ nnoremap <leader><space> :nohlsearch<cr>
 " shortcut for Conque bash shell
 nnoremap <leader>sh :ConqueTerm bash<cr>
 
-" color lines past 80
-windo let &colorcolumn = join(range(81,999),",")
+" Bind a key to toggle coloring lines past 80
+nnoremap <leader>8 :call eighty#ToggleColorColumn()<cr>
 
 " cursor positioning
 set cursorline
