@@ -47,6 +47,10 @@ fun! CycleTabs()
     endif
 endfun
 
+" Keep text highlighted after shifting
+vnoremap < <gv
+vnoremap > >gv
+
 syntax on  " syntax highlighting
 filetype plugin on  " change settings and syntax highlighting based on filetype
 
