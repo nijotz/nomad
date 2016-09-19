@@ -103,6 +103,9 @@ set cursorcolumn
 highlight CursorColumn ctermbg=234 cterm=NONE
 highlight CursorLine ctermbg=234 cterm=NONE
 
+" I'll never use modula
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
 " sudo write this file
 cmap W! w !sudo tee % >/dev/null
 
