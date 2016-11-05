@@ -24,13 +24,13 @@
 	url = https://github.com/vim-scripts/vim-coffee-script.git
 [submodule "scripts"]
 	path = scripts
-	url = git@github.com:nijotz/scripts.git
+	url = https://github.com/nijotz/scripts.git
 [submodule "cfgs/vim/bundle/syntastic"]
 	path = cfgs/vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
 [submodule "cfgs/vim/bundle/eighty-columns"]
 	path = cfgs/vim/bundle/eighty-columns
-	url = git@github.com:nijotz/eighty-columns.vim.git
+	url = https://github.com/nijotz/eighty-columns.vim.git
 [submodule "cfgs/vim/bundle/airline"]
 	path = cfgs/vim/bundle/airline
 	url = https://github.com/bling/vim-airline
@@ -42,10 +42,10 @@
 	url = https://github.com/corntrace/bufexplorer
 [submodule "cfgs/vim/ultisnips"]
 	path = cfgs/vim/bundle/ultisnips
-	url = git@github.com:vim-scripts/UltiSnips.git
+	url = https://github.com/vim-scripts/UltiSnips.git
 [submodule "cfgs/vim/bundle/ultisnips"]
 	path = cfgs/vim/bundle/ultisnips
-	url = git@github.com:vim-scripts/UltiSnips.git
+	url = https://github.com/vim-scripts/UltiSnips.git
 [submodule "cfgs/vim/bundle/ctrlp"]
 	path = cfgs/vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
@@ -57,13 +57,13 @@
 	url = https://github.com/vim-scripts/bats.vim.git
 [submodule "cfgs/vim/bundle/matchtag"]
 	path = cfgs/vim/bundle/matchtag
-	url = git@github.com:gregsexton/MatchTag.git
+	url = https://github.com/gregsexton/MatchTag.git
 [submodule "cfgs/vim/bundle/nerdtree"]
 	path = cfgs/vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "cfgs/vim/bundle/ctrlp_bdelete.vim"]
 	path = cfgs/vim/bundle/ctrlp_bdelete.vim
-	url = git@github.com:d11wtq/ctrlp_bdelete.vim.git
+	url = https://github.com/d11wtq/ctrlp_bdelete.vim.git
 [submodule "cfgs/vim/bundle/mustache"]
 	path = cfgs/vim/bundle/mustache
 	url = git://github.com/mustache/vim-mustache-handlebars.git
@@ -72,4 +72,4 @@
 	url = https://github.com/AndrewRadev/linediff.vim
 [submodule "cfgs/vim/bundle/rust"]
 	path = cfgs/vim/bundle/rust
-	url = git@github.com:rust-lang/rust.vim.git
+	url = https://github.com/rust-lang/rust.vim.git
