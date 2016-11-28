@@ -73,3 +73,6 @@
 [submodule "cfgs/vim/bundle/rust"]
 	path = cfgs/vim/bundle/rust
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "cfgs/vim/bundle/typescript-vim"]
+	path = cfgs/vim/bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
