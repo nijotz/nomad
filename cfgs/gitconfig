@@ -7,9 +7,10 @@
 [push]
     default = current
 [alias]
-    st = status -sb
-    me = log --author=Nick
-    lg = log --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative --graph
+    st  = status -sb
+    me  = log --author=Nick
+    lg  = log --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative --graph
+    lgd = log --pretty=format:'%C(yellow)%h%C(reset) - %C(green)%cd %C(reset)%s %C(cyan)<%an>%C(yellow)%d%C(reset)' --abbrev-commit --graph --date=format:'%Y-%m-%d %a %H:%M'
 [push]
     default = current
 [status]
