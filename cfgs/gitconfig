@@ -18,3 +18,5 @@
     help = false
 [diff]
     tool = vimdiff
+[rebase]
+    instructionFormat = %s [%an]
