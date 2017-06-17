@@ -96,6 +96,9 @@ nmap <leader>sh :ConqueTerm bash<cr>
 " Bind a key to toggle coloring lines past 80
 nmap <leader>8 :call eighty#ToggleColorColumn()<cr>
 
+" Close buffer without closing the window
+nmap <leader>c :bprevious<bar>split<bar>bnext<bar>bdelete<CR>
+
 " cursor positioning
 set cursorline
 set cursorcolumn
