@@ -23,6 +23,8 @@ set tabstop=4
 set expandtab
 filetype indent on  " filetype specific indenting
 
+let mapleader = "\\"
+
 " Cycle tabbing options
 map <leader><tab> :call CycleTabs()<CR>
 fun! CycleTabs()
@@ -71,27 +73,28 @@ set wildmode=list:longest
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 
 " paste/nopaste
-map <leader>p :set paste<CR>
-map <leader>P :set nopaste<CR>
+nmap <leader>P :set paste<CR>
+nmap <leader>p :set nopaste<CR>
 
 " toggle relative/normal line numbers
-map <leader>n :set rnu<CR>:set nu<CR>
-map <leader>N :set nornu<CR>:set nu<CR>
+nmap <leader>n :set rnu<CR>:set nu<CR>
+nmap <leader>N :set nornu<CR>:set nu<CR>
 
 " toggle nerdtree
-nnoremap <leader>t :NERDTreeToggle<cr>
+nmap <leader>t :NERDTreeFocus<cr>
+nmap <leader>T :NERDTreeClose<cr>
 
 " mundo
 nmap <leader>u :MundoToggle<CR>
 
 " hide matches on <leader>space
-nnoremap <leader><space> :nohlsearch<cr>
+nmap <leader><space> :nohlsearch<cr>
 
 " shortcut for Conque bash shell
-nnoremap <leader>sh :ConqueTerm bash<cr>
+nmap <leader>sh :ConqueTerm bash<cr>
 
 " Bind a key to toggle coloring lines past 80
-nnoremap <leader>8 :call eighty#ToggleColorColumn()<cr>
+nmap <leader>8 :call eighty#ToggleColorColumn()<cr>
 
 " cursor positioning
 set cursorline
@@ -140,5 +143,6 @@ set background=dark
 colorscheme solarized
 
 let g:ctrlp_map = '<leader>f'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_working_path_mode = 0  " Don't mess with the search path
 call ctrlp_bdelete#init()  " Plugin to delete buffers in CtrlPBuf mode
