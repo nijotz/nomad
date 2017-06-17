@@ -70,10 +70,6 @@ set wildmode=list:longest
 " read only/help/preview flags, file format, fugitive status
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 
-" pathogen
-call pathogen#infect()
-call pathogen#helptags()
-
 " paste/nopaste
 map <leader>p :set paste<CR>
 map <leader>P :set nopaste<CR>
@@ -85,8 +81,8 @@ map <leader>N :set nornu<CR>:set nu<CR>
 " toggle nerdtree
 nnoremap <leader>t :NERDTreeToggle<cr>
 
-" gundo
-map <leader>u :GundoToggle<CR>
+" mundo
+nmap <leader>u :MundoToggle<CR>
 
 " hide matches on <leader>space
 nnoremap <leader><space> :nohlsearch<cr>
@@ -108,6 +104,28 @@ au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
 " sudo write this file
 cmap W! w !sudo tee % >/dev/null
+
+" neo-plug plugins
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'altercation/vim-colors-solarized'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'j5shi/ctrlp_bdelete.vim'
+Plug 'neomake/neomake'
+Plug 'scrooloose/nerdtree'
+Plug 'leafgarland/typescript-vim'
+Plug 'simnalamburt/vim-mundo'
+Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'elubow/cql-vim'
+Plug 'rust-lang/rust.vim'
+call plug#end()
+
+" markdown setup
+let vim_markdown_preview_github=1
+let vim_markdown_preview_browser='Google Chrome'
+let vim_markdown_preview_hotkey='<leader>m'
 
 " tell syntastic which utilities to use
 let g:syntastic_python_checkers=['pyflakes']

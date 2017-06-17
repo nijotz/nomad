@@ -1,3 +1,4 @@
 bash/enabled
 cfgs/vim/.netrwhist
+cfgs/vim/plugged
 *.swp
