@@ -9,10 +9,12 @@ echo_and_eval() {
     eval "$input"
 }
 
+# Clear out old dynamic portion of bashrc
 unique=uijooQu2
-sed -n "/$unique/q;p" ~/.bashrc > ~/.nomad_bashrc
-echo "# DO NOT EDIT BELOW -- Dynamically generated with nomad $unique" >> ~/.nomad_bashrc
-echo >> ~/.nomad_bashrc
+# p - print lines; q - quit when unique pattern is found
+sed -n "/$unique/q;p" ~/.bashrc > $NEW_BASHRC
+echo "# DO NOT EDIT BELOW -- Dynamically generated with nomad -- $unique" >> $NEW_BASHRC
+echo >> $NEW_BASHRC
 
 # find - get bash source files
 # awk - put the filename at the front of the line
@@ -27,13 +29,19 @@ files=$(find -L $NOMAD_BASE -type f ! -iname ".*" | \
 for file in $files; do
     output=$(source $file)
     if [ "$(echo $output | wc -c)" -gt 1 ]; then
-        echo '####' >> ~/.nomad_bashrc
-        echo \## $(echo $file) >> ~/.nomad_bashrc
-        echo '####' >> ~/.nomad_bashrc
-        echo "$output" >> ~/.nomad_bashrc
-        echo >> ~/.nomad_bashrc
+        echo '####' >> $NEW_BASHRC
+        echo \## $(echo $file) >> $NEW_BASHRC
+        echo '####' >> $NEW_BASHRC
+        echo "$output" >> $NEW_BASHRC
+        echo >> $NEW_BASHRC
     fi
 done
 
+# Allow echo_and_eval to be used for sourcing nomad scripts
+echo '####' >> $NEW_BASHRC
+echo \## Allow nomad bash scripts to be \`source\`ed >> $NEW_BASHRC
+echo '####' >> $NEW_BASHRC
+declare -f echo_and_eval >> $NEW_BASHRC
+
 mv ~/.bashrc ~/.bashrc.old
-mv ~/.nomad_bashrc ~/.bashrc
+mv $NEW_BASHRC ~/.bashrc
