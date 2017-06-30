@@ -129,6 +129,9 @@ Plug 'elubow/cql-vim'
 Plug 'rust-lang/rust.vim'
 call plug#end()
 
+" Use powerline fonts
+let g:airline_powerline_fonts = 1
+
 " markdown setup
 let vim_markdown_preview_github=1
 let vim_markdown_preview_browser='Google Chrome'
