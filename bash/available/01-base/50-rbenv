@@ -1,3 +1,0 @@
-if which rbenv > /dev/null; then
-    echo 'eval "$(rbenv init -)"'
-fi
