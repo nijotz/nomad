@@ -113,6 +113,7 @@ cmap W! w !sudo tee % >/dev/null
 
 " neo-plug plugins
 call plug#begin('~/.vim/plugged')
+Plug 'dag/vim-fish'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'jlanzarotta/bufexplorer'
