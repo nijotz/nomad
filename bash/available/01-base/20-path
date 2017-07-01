@@ -1,3 +1,0 @@
-echo_and_eval << "EOF"
-PATH="~/bin:~/.nomad/scripts:$PATH"
-EOF

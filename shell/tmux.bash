@@ -1,14 +1,14 @@
-cat << "EOF"
+# Glorious 256 color
 alias tmux="TERM=xterm-256color tmux"
 
+# Secret tmux magic
 settitle() {
   printf "\033k$*\033\\"
 }
 
+# Parse anything that can be passed to remote shell commands, including flags
+# and the hostname, and just return what tmux should display as the window name
 parse_host() {
-  # Parse anything that can be passed to the command, including flags and the
-  # hostname, and just return what tmux should display as the window name
-
   sed_statements[0]='s/-p *[0-9]*//g'    # ignore port flag
   sed_statements[1]='s/-A//g'            # ignore agent forwarding flag
  #sed_statements[2]='s/[^ @]*@//g'       # ignore usernames
@@ -27,8 +27,9 @@ parse_host() {
   echo "${*:2}" | eval sed -r $sed_arguments
 }
 
+# Wrap remote shell commands with a function that renames tmux windows with
+# condensed information about the remote shell
 remote_shell_wrapper() {
-
   # If a Ctrl-C is ever sent, make sure tmux window naming goes back to the
   # default.  This fixes the window name not reverting when Ctrl-C'ing during
   # password input for ssh.
@@ -41,6 +42,7 @@ remote_shell_wrapper() {
   tmux set-window-option automatic-rename on > /dev/null
 }
 
+# Commands to wrap
 ssh() {
   remote_shell_wrapper ssh "$@"
 }
@@ -48,4 +50,3 @@ ssh() {
 mosh() {
   remote_shell_wrapper mosh "$@"
 }
-EOF

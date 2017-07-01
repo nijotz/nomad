@@ -1,3 +1,0 @@
-echo_and_eval << "EOF"
-PATH=~/.cabal/bin:$PATH
-EOF

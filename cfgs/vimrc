@@ -127,6 +127,7 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'elubow/cql-vim'
 Plug 'rust-lang/rust.vim'
+Plug 'moll/vim-node'
 call plug#end()
 
 " Use powerline fonts

@@ -1,4 +1,3 @@
-echo_and_eval << "EOF"
 # The default history settings are set to 500 lines for the file size.  If these
 # configs don't ever load for some reason, the default will remove all history
 # except the last 500 lines.  I don't want that so I'm moving the history file
@@ -22,4 +21,3 @@ export PROMPT_COMMAND="history -a"
 
 # Append to history file rather than overwrite
 shopt -s histappend
-EOF

@@ -20,3 +20,5 @@
     tool = vimdiff
 [rebase]
     instructionFormat = %s [%an]
+[core]
+	editor = /usr/local/bin/nvim

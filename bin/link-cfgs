@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#TODO If a cfg file exists and it's not a link, do a diff.
-#     If they're the same, remove file and convert to link.
-#     If not the same, message user.
-for cfg in ~/.nomad/cfgs/*; do
-    target=~/.$(basename $cfg)
-    [ -h $target ] || ln -s $cfg $target
-done;

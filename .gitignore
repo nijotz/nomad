@@ -1,3 +1,5 @@
+cfg/config.bash
+cfg/config.fish
 bash/enabled
 cfgs/vim/.netrwhist
 cfgs/vim/plugged
