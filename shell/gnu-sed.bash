@@ -1,5 +1,15 @@
-# I don't want to have to type gsed
-export PATH=$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH
+brew_prefix=$(brew --prefix)
+if [[ -z "$brew_prefix" ]]; then
+  nomad_log info "homebrew binary not found"
+  exit 0
+fi
+
+nomad_log info "found homebrew binary; configuring GNU sed"
+
+nomad_echo_and_eval << EOF
+# I don't want to have to type 'gsed'
+export PATH=$brew_prefix/opt/gnu-sed/libexec/gnubin:\$PATH
 
 # Need the man pages for the GNU sed
-export MANPATH=$(brew --prefix)/opt/gnu-sed/libexec/gnuman:$MANPATH
+export MANPATH=$brew_prefix/opt/gnu-sed/libexec/gnuman:\$MANPATH
+EOF

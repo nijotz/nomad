@@ -27,14 +27,13 @@ function collect_enabled {
     file=~/.nomad/shell/$file
     echo "Processing $file"
     if [[ -x "$file" ]]; then
-      # Enables the nomad_log function
-      exec 3>&1
+      exec 3>&1  # Enables the nomad_log function
       output=$(~/.nomad/nomad.$shell $file)
     else
       output=$(cat $file)
     fi
     echo '####' >> $new_config
-    echo \## $(echo $file) >> $new_config
+    echo "## $(echo $file)" >> $new_config
     echo '####' >> $new_config
     echo "$output" >> $new_config
     echo >> $new_config

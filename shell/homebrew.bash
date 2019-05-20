@@ -5,6 +5,7 @@ EOF
 brew_prefix=$(brew --prefix)
 if [[ -z "$brew_prefix" ]]; then
   nomad_log info "homebrew binary not found"
+  exit 0
 fi
 nomad_log info "found homebrew binary; looking for completion dir"
 
