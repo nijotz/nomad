@@ -1,0 +1,13 @@
+bash-completion
+coreutils
+git
+gnu-sed
+mplayer
+nmap
+pv
+python
+reattach-to-user-namespace
+tinc
+tmux
+vim
+wget

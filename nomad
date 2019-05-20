@@ -9,6 +9,17 @@ function link_cfgs {
   done;
 }
 
+function install_pkgs {
+  echo "Installing packages"
+  if [ $(uname -s) == 'Darwin' ]; then
+    cat pkgs.Darwin | while read pkg; do
+      echo "- installing $pkg"
+      brew install $pkg
+    done
+  fi
+  echo
+}
+
 function sync_submodules {
   pushd ~/.nomad/ > /dev/null
   git submodule sync
@@ -70,4 +81,9 @@ function infect_rc {
 
 infect_rc
 collect_enabled bash
-collect_enabled fish
+if command -v fish; then
+  collect_enabled fish
+fi
+#link_cfgs
+#install_pkgs
+#sync_submodules
