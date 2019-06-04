@@ -2,6 +2,36 @@
 
 set -e
 
+function get_os {
+  kernel=$(uname -s)
+  if [ $kernel == 'Darwin' ]; then
+    os='macOS'
+  elif [ $kernel == 'Linux' ]; then
+    os=$(lsb_release -i | awk '{print $NF}')
+  else
+    echo "Unrecognized kernel: $kernel"
+    exit 1
+  fi
+
+  echo $os
+  exit 0
+}
+
+function install_pkgs {
+  os=$(get_os)
+  if [ $os == 'macOS' ]; then
+    cmd='brew install'
+  elif [ $os == 'Ubuntu' ]; then
+    cmd='sudo apt-get -y install'
+  else
+    echo "No installation command for OS: $os"
+    exit 1
+  fi
+
+  echo "Installing packages for $os"
+  $cmd $(< ~/.nomad/pkgs.$os)
+}
+
 function link_cfgs {
   for cfg in ~/.nomad/cfgs/*; do
     target=~/.$(basename $cfg)
@@ -9,16 +39,6 @@ function link_cfgs {
   done;
 }
 
-function install_pkgs {
-  echo "Installing packages"
-  if [ $(uname -s) == 'Darwin' ]; then
-    cat pkgs.Darwin | while read pkg; do
-      echo "- installing $pkg"
-      brew install $pkg
-    done
-  fi
-  echo
-}
 
 function sync_submodules {
   pushd ~/.nomad/ > /dev/null

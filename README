@@ -1,32 +1,5 @@
 Installation
 ------------
 git clone git@github.com:nijotz/nomad.git ~/.nomad
-source ~/.nomad/bin/install
+~/.nomad/nomad
 
-Packages (Ubuntu)
------------------
-curl
-git
-htop
-nmap
-openssh-server
-pv
-tmux
-vim
-xclip
-
-Packages (Homebrew)
-___________________
-bash-completion
-coreutils
-git
-gnu-sed
-mplayer
-nmap
-pv
-python
-reattach-to-user-namespace --with-wrap-pbcopy-and-pbpaste
-tinc
-tmux
-vim
-wget
