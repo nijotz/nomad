@@ -33,8 +33,13 @@ function install_pkgs {
 }
 
 function link_cfgs {
+  echo "Linking configs"
   for cfg in ~/.nomad/cfgs/*; do
-    target=~/.$(basename $cfg)
+    name=$(basename $cfg)
+    target=~/.$name
+    if [ $name == 'nvim' ]; then
+      target=~/.config/nvim
+    fi
     [ -h $target ] || ln -s $cfg $target
   done;
 }
