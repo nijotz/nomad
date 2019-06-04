@@ -29,12 +29,12 @@ function install_pkgs {
   fi
 
   echo "Installing packages for $os"
-  $cmd $(< ~/.nomad/pkgs.$os)
+  $cmd $(< ~/.nomad/pkgs/pkgs.$os)
 }
 
-function link_cfgs {
+function link_dotfiles {
   echo "Linking configs"
-  for cfg in ~/.nomad/cfgs/*; do
+  for cfg in ~/.nomad/dotfiles/*; do
     name=$(basename $cfg)
     target=~/.$name
     if [ $name == 'nvim' ]; then
@@ -109,6 +109,6 @@ collect_enabled bash
 if command -v fish; then
   collect_enabled fish
 fi
-#link_cfgs
-#install_pkgs
-#sync_submodules
+link_dotfiles
+install_pkgs
+sync_submodules
