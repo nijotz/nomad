@@ -123,6 +123,7 @@ cmap W! w !sudo tee % >/dev/null
 " neo-plug plugins
 try
     call plug#begin('~/.vim/plugged')
+    Plug 'nijotz/eighty-columns'
     Plug 'ternjs/tern_for_vim'
     Plug 'tomlion/vim-solidity'
     Plug 'digitaltoad/vim-pug'
@@ -184,3 +185,5 @@ endif
 
 let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
+
+let g:eighty_columns_show = 0
