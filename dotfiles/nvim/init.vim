@@ -23,6 +23,8 @@ set tabstop=4
 set expandtab
 filetype indent on  " filetype specific indenting
 
+set mouse=a
+
 let mapleader = "\\"
 
 " Cycle tabbing options
