@@ -77,13 +77,17 @@ if exists("fugitive#statusline")
     set statusline.=\ %{fugitive#statusline()}
 endif
 
+" spell/nospell
+nmap <leader>s :set spell<CR>
+nmap <leader>S :set nospell<CR>
+
 " paste/nopaste
-nmap <leader>P :set paste<CR>
-nmap <leader>p :set nopaste<CR>
+nmap <leader>p :set paste<CR>
+nmap <leader>P :set nopaste<CR>
 
 " list/nolist
-nmap <leader>L :set list<CR>
-nmap <leader>l :set nolist<CR>
+nmap <leader>l :set list<CR>
+nmap <leader>L :set nolist<CR>
 
 " toggle relative/normal line numbers
 nmap <leader>n :set rnu<CR>:set nu<CR>
