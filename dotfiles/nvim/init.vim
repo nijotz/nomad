@@ -173,12 +173,19 @@ au FileType xml setlocal equalprg=tidy\ -i\ -xml\ --indent-spaces\ 4\ 2>/dev/nul
 " Set tidy as the indent program when editting html files
 au FileType html setlocal equalprg=tidy\ -i\ -html\ --indent-spaces\ 4\ 2>/dev/null
 
+" colors
 set background=dark
 try
+    let g:solarized_termcolors=16
     colorscheme solarized
 catch /^Vim\%((\a\+)\)\=:E185/
     " Color scheme doesn't exist
 endtry
+
+" I'm using solarized dark (patched) in iterm so some adjustments need to be made
+hi QuickFixLine ctermbg=234
+hi Visual ctermbg=12
+hi Normal ctermbg=NONE
 
 let g:ctrlp_map = '<leader>f'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
