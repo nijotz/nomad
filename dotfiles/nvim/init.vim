@@ -153,8 +153,9 @@ catch
 endtry
 
 " when writing or reading a buffer, and on changes in insert and
-" normal mode (after 1s; no delay when writing).
-"call neomake#configure#automake('nrwi', 500)
+" normal mode (after 0.5s; no delay when writing).
+call neomake#configure#automake('nrwi', 500)
+let g:neomake_javascript_enabled_makers = ['eslint']
 
 " Use powerline fonts
 let g:airline_powerline_fonts = 1
