@@ -104,6 +104,9 @@ nmap <leader>T :NERDTreeClose<cr>
 " mundo
 nmap <leader>u :MundoToggle<CR>
 
+" airline
+nmap <leader>a :AirlineToggle<CR>
+
 " hide matches on <leader>space
 nmap <leader><space> :nohlsearch<cr>
 
