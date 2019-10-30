@@ -25,6 +25,10 @@ filetype indent on  " filetype specific indenting
 
 set mouse=a
 
+" Persist undo across sessions
+set undofile
+set undodir=~/.vim/undo
+
 let mapleader = "\\"
 
 " Cycle tabbing options
