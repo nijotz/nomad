@@ -178,8 +178,8 @@ let g:neomake_javascript_enabled_makers = ['eslint']
 let g:airline_powerline_fonts = 1
 
 " markdown setup
-let vim_markdown_preview_github=1
-let vim_markdown_preview_browser='Google Chrome'
+" let vim_markdown_preview_github=1
+let vim_markdown_preview_browser='Firefox'
 let vim_markdown_preview_hotkey='<leader>m'
 
 " tell syntastic which utilities to use
