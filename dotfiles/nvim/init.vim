@@ -81,9 +81,9 @@ set wildmode=list:longest
 " linenum, columnnum, percentage through file, modification flag, file path,
 " read only/help/preview flags, file format, fugitive status
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})
-if exists("fugitive#statusline")
-    set statusline.=\ %{fugitive#statusline()}
-endif
+" if exists("fugitive#statusline")
+"     set statusline.=\ %{fugitive#statusline()}
+" endif
 
 " spell/nospell
 nmap <leader>s :set spell<CR>
