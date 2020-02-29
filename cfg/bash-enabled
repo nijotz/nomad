@@ -10,6 +10,7 @@ nvm.bash
 path.bash
 prompt.bash
 pyenv.bash
+rbenv.bash
 tmux.bash
 vi-mode.bash
 fzf.bash
