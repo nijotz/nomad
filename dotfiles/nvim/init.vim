@@ -215,6 +215,10 @@ if exists("ctrlp_bdelete#init()")
     call ctrlp_bdelete#init()  " Plugin to delete buffers in CtrlPBuf mode
 endif
 
+" I don't need branch info or file encoding
+let g:airline_section_b = ''
+let g:airline_section_y = ''
+
 let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
