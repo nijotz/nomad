@@ -155,6 +155,9 @@ try
     Plug 'elubow/cql-vim'
     Plug 'rust-lang/rust.vim'
     Plug 'moll/vim-node'
+    Plug '/usr/local/opt/fzf'
+    Plug 'junegunn/fzf.vim'
+    Plug 'jremmen/vim-ripgrep'
     call plug#end()
 catch
 endtry
@@ -206,3 +209,13 @@ let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 let g:eighty_columns_show = 0
+
+" Setup RipGrep through fzf
+let g:rg_command = '
+  \ rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --color "always"
+  \ -g "*.{js,json,php,md,styl,jade,html,config,py,cpp,c,go,hs,rb,conf}"
+  \ -g "!{.git,node_modules,vendor}/*" '
+
+command! -bang -nargs=* FileRg call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)
+
+map <leader>r :FileRg<CR>

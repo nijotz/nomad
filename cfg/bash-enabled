@@ -12,3 +12,4 @@ prompt.bash
 pyenv.bash
 tmux.bash
 vi-mode.bash
+fzf.bash
