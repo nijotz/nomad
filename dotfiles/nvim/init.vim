@@ -23,6 +23,10 @@ set tabstop=4
 set expandtab
 filetype indent on  " filetype specific indenting
 
+" folding
+set foldmethod=syntax
+set foldlevel=2
+
 set mouse=a
 
 " Persist undo across sessions
