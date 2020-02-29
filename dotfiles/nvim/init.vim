@@ -223,6 +223,7 @@ let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 let g:eighty_columns_show = 0
+let g:eighty_columns_toggles = [80, 90, 100, 120, 0]
 
 " Setup RipGrep through fzf
 let g:rg_command = '
