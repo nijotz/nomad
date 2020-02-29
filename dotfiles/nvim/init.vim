@@ -191,6 +191,9 @@ au FileType xml setlocal equalprg=tidy\ -i\ -xml\ --indent-spaces\ 4\ 2>/dev/nul
 " Set tidy as the indent program when editting html files
 au FileType html setlocal equalprg=tidy\ -i\ -html\ --indent-spaces\ 4\ 2>/dev/null
 
+" Default to two space tabs for javascript
+au FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
+
 " colors
 set background=dark
 try
