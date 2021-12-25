@@ -9,8 +9,8 @@ nomad_log info "found homebrew binary; configuring coreutils"
 mkdir -p ~/.nomad/coreutils/bin
 mkdir -p ~/.nomad/coreutils/man/man1
 
-ln -s $brew_prefix/opt/coreutils/libexec/gnubin/ls ~/.nomad/coreutils/bin/
-ln -s $brew_prefix/opt/coreutils/libexec/gnuman/man1/ls.1 ~/.nomad/coreutils/man/man1/
+ln -sf $brew_prefix/opt/coreutils/libexec/gnubin/ls ~/.nomad/coreutils/bin/
+ln -sf $brew_prefix/opt/coreutils/libexec/gnuman/man1/ls.1 ~/.nomad/coreutils/man/man1/
 
 nomad_echo_and_eval << EOF
 # I'm used to the GNU version of utils
