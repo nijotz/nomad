@@ -1,5 +1,5 @@
 nomad_echo_and_eval << EOF
-export PATH=/usr/local/bin:/usr/local/sbin:\$PATH
+export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:\$PATH
 EOF
 
 brew_prefix=$(brew --prefix)
