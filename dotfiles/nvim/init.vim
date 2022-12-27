@@ -139,6 +139,7 @@ cmap W! w !sudo tee % >/dev/null
 try
     call plug#begin('~/.vim/plugged')
     Plug 'leafgarland/typescript-vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'nijotz/eighty-columns'
     Plug 'ternjs/tern_for_vim'
     Plug 'tomlion/vim-solidity'
@@ -170,6 +171,11 @@ try
     call plug#end()
 catch
 endtry
+
+" Declare CoC extensions
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
 
 " when writing or reading a buffer, and on changes in insert and
 " normal mode (after 0.5s; no delay when writing).
