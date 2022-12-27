@@ -181,6 +181,7 @@ let g:airline_powerline_fonts = 1
 " let vim_markdown_preview_github=1
 let vim_markdown_preview_browser='Firefox'
 let vim_markdown_preview_hotkey='<leader>m'
+let vim_markdown_preview_github=1
 
 " tell syntastic which utilities to use
 let g:syntastic_python_checkers=['pyflakes']
