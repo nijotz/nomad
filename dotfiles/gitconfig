@@ -21,4 +21,8 @@
 [rebase]
     instructionFormat = %s [%an]
 [core]
-    editor = /opt/homebrew/bin/nvim
+    editor = /usr/local/bin/nvim
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
