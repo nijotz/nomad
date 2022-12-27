@@ -163,7 +163,7 @@ try
     Plug 'mhinz/vim-grepper'
     Plug 'CaffeineViking/vim-glsl'
     Plug 'hashivim/vim-terraform'
-    Plug '/usr/local/opt/fzf'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'jremmen/vim-ripgrep'
     call plug#end()
