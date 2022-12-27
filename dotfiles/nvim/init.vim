@@ -138,6 +138,7 @@ cmap W! w !sudo tee % >/dev/null
 " neo-plug plugins
 try
     call plug#begin('~/.vim/plugged')
+    Plug 'leafgarland/typescript-vim'
     Plug 'nijotz/eighty-columns'
     Plug 'ternjs/tern_for_vim'
     Plug 'tomlion/vim-solidity'
