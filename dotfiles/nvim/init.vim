@@ -146,6 +146,7 @@ try
     Plug 'pangloss/vim-javascript'
     Plug 'mxw/vim-jsx'
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-surround'
     Plug 'vim-airline/vim-airline'
     Plug 'jlanzarotta/bufexplorer'
     Plug 'altercation/vim-colors-solarized'
