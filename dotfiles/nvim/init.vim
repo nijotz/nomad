@@ -237,7 +237,7 @@ let g:eighty_columns_toggles = [80, 90, 100, 120, 0]
 " Setup RipGrep through fzf
 let g:rg_command = '
   \ rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --color "always"
-  \ -g "*.{js,json,php,md,styl,jade,html,config,py,cpp,c,go,hs,rb,conf,liquid,scss}"
+  \ -g "*.{js,jsx,json,php,md,styl,jade,html,config,py,cpp,c,go,hs,rb,conf,liquid,scss,css}"
   \ -g "!{.git,node_modules,vendor}/*" '
 
 command! -bang -nargs=* FileRg call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)
