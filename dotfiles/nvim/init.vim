@@ -228,8 +228,8 @@ endif
 let g:airline_section_b = ''
 let g:airline_section_y = ''
 
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
+set pyxversion=3
 
 let g:eighty_columns_show = 0
 let g:eighty_columns_toggles = [80, 90, 100, 120, 0]
