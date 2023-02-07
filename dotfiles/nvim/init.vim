@@ -108,14 +108,8 @@ nmap <leader>T :NERDTreeClose<cr>
 " mundo
 nmap <leader>u :MundoToggle<CR>
 
-" airline
-nmap <leader>a :AirlineToggle<CR>
-
 " hide matches on <leader>space
 nmap <leader><space> :nohlsearch<cr>
-
-" shortcut for Conque bash shell
-nmap <leader>sh :ConqueTerm bash<cr>
 
 " Bind a key to toggle coloring lines past 80
 nmap <leader>8 :call eighty#ToggleColorColumn()<cr>
