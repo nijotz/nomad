@@ -148,7 +148,7 @@ try
     Plug 'altercation/vim-colors-solarized'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'j5shi/ctrlp_bdelete.vim'
-    Plug 'neomake/neomake'
+    Plug 'dense-analysis/ale'
     Plug 'scrooloose/nerdtree'
     Plug 'leafgarland/typescript-vim'
     Plug 'simnalamburt/vim-mundo'
@@ -166,15 +166,17 @@ try
 catch
 endtry
 
+" ALE settings
+let g:ale_set_highlights = 0
+let g:ale_virtualtext_cursor = 0
+let g:ale_sign_error = '●'
+let g:ale_sign_warning = '.'
+let g:ale_fixers = ['eslint']
+
 " Declare CoC extensions
 let g:coc_global_extensions = [
   \ 'coc-tsserver'
   \ ]
-
-" when writing or reading a buffer, and on changes in insert and
-" normal mode (after 0.5s; no delay when writing).
-call neomake#configure#automake('nrwi', 500)
-let g:neomake_javascript_enabled_makers = ['eslint']
 
 " Use powerline fonts
 let g:airline_powerline_fonts = 1
