@@ -232,7 +232,7 @@ let g:eighty_columns_toggles = [80, 90, 100, 120, 0]
 
 " Setup RipGrep through fzf
 let g:rg_command = '
-  \ rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --color "always"
+  \ rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always"
   \ -g "*.{js,jsx,json,php,md,styl,jade,html,config,py,cpp,c,go,hs,rb,conf,liquid,scss,css}"
   \ -g "!{.git,node_modules,vendor}/*" '
 
