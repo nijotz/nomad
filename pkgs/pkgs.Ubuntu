@@ -1,8 +1,10 @@
 curl
+fzf
 git
 htop
 nmap
 openssh-server
 pv
+ripgrep
 tmux
 vim
