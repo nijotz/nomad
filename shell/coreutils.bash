@@ -1,4 +1,4 @@
-brew_prefix=$(brew --prefix)
+brew_prefix=$(brew --prefix 2>/dev/null)
 if [[ -z "$brew_prefix" ]]; then
   nomad_log info "homebrew binary not found"
   exit 0

@@ -1,5 +1,5 @@
 npm_bin=$(command -v npm)
-if [ ! $? ]; then
+if [[ -z $npm_bin ]]; then
   nomad_log info "npm command not found; skipping setup"
   exit
 fi
