@@ -108,6 +108,9 @@ nmap <leader>T :NERDTreeClose<cr>
 " mundo
 nmap <leader>u :MundoToggle<CR>
 
+" ALE
+nmap <leader>x :ALEFix<CR>
+
 " hide matches on <leader>space
 nmap <leader><space> :nohlsearch<cr>
 
