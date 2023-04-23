@@ -1,1 +1,1 @@
-export PATH=~/bin:~/.nomad/scripts:$PATH
+export PATH=~/bin:~/.nomad/bin:$PATH

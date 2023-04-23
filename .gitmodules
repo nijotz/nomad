@@ -1,3 +1,6 @@
-[submodule "scripts"]
-	path = scripts
+[submodule "scripts/mvln"]
+	path = scripts/mvln
+	url = https://github.com/nijotz/mvln.git
+[submodule "scripts/scripts"]
+	path = scripts/scripts
 	url = https://github.com/nijotz/scripts.git
