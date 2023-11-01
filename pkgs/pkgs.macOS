@@ -4,6 +4,7 @@ coreutils
 fzf
 git
 gnu-sed
+jq
 mosh
 nmap
 nvim

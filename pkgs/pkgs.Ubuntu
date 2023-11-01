@@ -2,6 +2,7 @@ curl
 fzf
 git
 htop
+jq
 nmap
 openssh-server
 pv
