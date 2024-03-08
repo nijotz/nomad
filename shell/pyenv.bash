@@ -1,16 +1,14 @@
-if command -v pyenv > /dev/null; then
-  nomad_log info "found pyenv; configuring"
-else
+export PYENV_ROOT="$HOME/.pyenv"
+if [[ -z "$PYENV_ROOT" ]]; then
+  nomad_log info "could not find pyenv root; exiting"
   exit 0
 fi
 
-pyenv_root=$(pyenv root)
-if [[ -z "$pyenv_root" ]]; then
-  nomad_log error "could not find pyenv root"
-  exit 1
-fi
+nomad_log info "found pyenv root; configuring"
 
-nomad_echo_and_eval << EOF
-$(pyenv init - --no-rehash)
-$(pyenv virtualenv-init -)
+cat << EOF
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="\$PYENV_ROOT/bin:\$PATH"
+eval "\$(pyenv init -)"
+eval "\$(pyenv virtualenv-init -)"
 EOF
