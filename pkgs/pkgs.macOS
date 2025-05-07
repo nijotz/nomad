@@ -9,10 +9,13 @@ mosh
 nmap
 nvim
 pv
+pyenv
+pyenv-virtualenv
 python
 reattach-to-user-namespace
 ripgrep
 tinc
 tmux
 vim
+watch
 wget
