@@ -16,4 +16,5 @@ else
 EOF
 fi
 
-$brew_prefix/bin/brew shellenv | nomad_echo_and_eval
+echo export PATH=$(brew --prefix)/bin:\$PATH | nomad_echo_and_eval
+echo 'eval "$(brew shellenv)"' | nomad_echo_and_eval
