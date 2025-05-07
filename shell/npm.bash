@@ -4,7 +4,7 @@ if [[ -z $npm_bin ]]; then
   exit
 fi
 
-npm_bin_root=$(npm bin -g)
+npm_bin_root=$(npm config get prefix)/bin
 nomad_log info "found npm root bin directory: $npm_bin_root"
 nomad_log info "adding npm directories to PATH"
 
