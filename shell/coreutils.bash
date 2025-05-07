@@ -6,16 +6,10 @@ fi
 
 nomad_log info "found homebrew binary; configuring coreutils"
 
-mkdir -p ~/.nomad/coreutils/bin
-mkdir -p ~/.nomad/coreutils/man/man1
-
-ln -sf $brew_prefix/opt/coreutils/libexec/gnubin/ls ~/.nomad/coreutils/bin/
-ln -sf $brew_prefix/opt/coreutils/libexec/gnuman/man1/ls.1 ~/.nomad/coreutils/man/man1/
-
 nomad_echo_and_eval << EOF
 # I'm used to the GNU version of utils
-export PATH=~/.nomad/coreutils/bin:\$PATH
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:\$PATH
 
 # Need the man pages for the GNU coreutils
-export MANPATH=~/.nomad/coreutils/man:\$MANPATH
+export MANPATH=$(brew --prefix coreutils)/libexec/gnuman:\$MANPATH
 EOF
