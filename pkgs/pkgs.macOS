@@ -14,6 +14,7 @@ pyenv-virtualenv
 python
 reattach-to-user-namespace
 ripgrep
+scroll-reverser
 tinc
 tmux
 vim
