@@ -1,6 +1,7 @@
 cabal.bash
 color.bash
 coreutils.bash
+gnu-grep.bash
 gnu-sed.bash
 history.bash
 homebrew.bash
