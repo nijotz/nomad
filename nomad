@@ -84,12 +84,12 @@ function init {
 }
 
 function infect_rc {
-  unique=uijooQu2
+  unique=NOMAD_AUTO_CONFIG
   [ -e ~/.bashrc ] && sed -i -e "/.*${unique}.*/d" ~/.bashrc
   [ -e ~/.config/fish/config.fish ] && sed -i -e "/.*${unique}.*/d" ~/.config/fish/config.fish
-  echo "source ~/.nomad/cfg/config.bash #uijooQu2" >> ~/.bashrc
+  echo "source ~/.nomad/cfg/config.bash #${unique}" >> ~/.bashrc
   mkdir -p ~/.config/fish/
-  echo "source ~/.nomad/cfg/config.fish #uijooQu2" >> ~/.config/fish/config.fish
+  echo "source ~/.nomad/cfg/config.fish #${unique}" >> ~/.config/fish/config.fish
 }
 
 infect_rc
