@@ -6,6 +6,7 @@ gnu-sed.bash
 history.bash
 homebrew.bash
 javahome.bash
+nomad.bash
 npm.bash
 nvm.bash
 path.bash
