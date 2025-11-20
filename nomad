@@ -77,17 +77,6 @@ function collect_enabled {
   mv ~/.nomad/cfg/config.$shell{.temp,}
 }
 
-# Some configurations needs to be available to other scripts. For example,
-# homebrew configuration is needed by other scripts. So, as they are loaded
-# into the rc file, also load them into the current environment for other
-# scripts to make use of
-function nomad_echo_and_eval {
-  input=`cat`
-  echo "$input"
-  eval "$input"
-}
-export -f nomad_echo_and_eval
-
 function init {
   mkdir -p ~/.nomad/cfg/
   ls ~/.nomad/shell/*.bash > ~/.nomad/cfg/bash-enabled
