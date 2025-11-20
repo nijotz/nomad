@@ -1,0 +1,11 @@
+[*.sh]
+indent_style = space
+indent_size = 2
+tab_width = 2
+space_redirects = true
+
+[[bash]]
+indent_style = space
+indent_size = 2
+tab_width = 2
+space_redirects = true

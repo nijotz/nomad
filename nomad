@@ -41,9 +41,8 @@ function link_dotfiles {
       target=~/.config/nvim
     fi
     [ -h $target ] || ln -s $cfg $target
-  done;
+  done
 }
-
 
 function sync_submodules {
   pushd ~/.nomad/ > /dev/null
@@ -63,7 +62,7 @@ function collect_enabled {
     file=~/.nomad/shell/$file
     echo "Processing $file"
     if [[ -x "$file" ]]; then
-      exec 3>&1  # Enables the nomad_log function
+      exec 3>&1 # Enables the nomad_log function
       output=$(~/.nomad/nomad.$shell $file)
     else
       output=$(cat $file)
