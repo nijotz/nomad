@@ -5,3 +5,4 @@ dotfiles/vim/.netrwhist
 dotfiles/vim/plugged
 *.swp
 coreutils
+dotfiles/vim/undo/
