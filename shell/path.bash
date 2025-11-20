@@ -1,1 +1,1 @@
-export PATH=~/bin:~/.nomad/bin:$PATH
+export PATH=~/bin:~/.local/bin:~/.nomad/bin:$PATH
