@@ -3,6 +3,7 @@ bash-completion@2
 coreutils
 fzf
 git
+glances
 gnu-sed
 jq
 mosh
