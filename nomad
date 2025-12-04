@@ -37,9 +37,17 @@ function link_dotfiles {
   for cfg in ~/.nomad/dotfiles/*; do
     name=$(basename $cfg)
     target=~/.$name
-    if [ $name == 'nvim' ]; then
-      target=~/.config/nvim
+    if [ $name == 'config' ]; then
+      continue
     fi
+    [ -h $target ] || ln -s $cfg $target
+  done
+
+  if [ ! -d ~/.nomad/dotfiles/config/ ]; then return; fi
+
+  for cfg in ~/.nomad/dotfiles/config/*; do
+    name=$(basename $cfg)
+    target=~/.config/$name
     [ -h $target ] || ln -s $cfg $target
   done
 }
