@@ -374,6 +374,8 @@
 	<string>C76E03A3-183D-432A-8E97-F33D6EECF76A</string>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
+	<key>HideScrollbar</key>
+	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_C76E03A3-183D-432A-8E97-F33D6EECF76A</key>
